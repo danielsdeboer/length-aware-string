@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/danielsdeboer/length-aware-string.svg?branch=master)](https://travis-ci.org/danielsdeboer/length-aware-string)
+[![Latest Stable Version](https://poser.pugx.org/aviator/length-aware-string/v/stable)](https://packagist.org/packages/aviator/length-aware-string)
+[![License](https://poser.pugx.org/aviator/length-aware-string/license)](https://packagist.org/packages/aviator/length-aware-string)
+
 ## Overview
 
 LengthAwareString is a string wrapper concerned with string length. By default it truncates strings that fail validation, but can be (optionally) given a strategy object to provide different functionality. 
