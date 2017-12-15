@@ -7,7 +7,7 @@ use Aviator\Types\LengthAwareString;
 use Aviator\Types\Strategies\Throws;
 use PHPUnit\Framework\TestCase;
 
-class LengthAwareStringText extends TestCase
+class LengthAwareStringTest extends TestCase
 {
     /** @test */
     public function it_takes_a_string_and_a_length_and_validates_the_string ()
