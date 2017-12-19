@@ -48,4 +48,14 @@ class LengthAwareStringTest extends TestCase
 
         $this->assertSame($expected, (string) $instance);
     }
+
+    /** @test */
+    public function it_implements_countable ()
+    {
+        $instance = LengthAwareString::make('test', 4);
+
+        $expected = 4;
+
+        $this->assertCount($expected, $instance);
+    }
 }
