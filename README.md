@@ -48,12 +48,20 @@ $las->get();
 // 'string'
 ```
 
-The class also implements `__toString()` so you can treat it like a string:
+The class implements `__toString()` so you can treat it like a string:
 
 ```php
 echo $las;
 
 // 'string'
+```
+
+The class implements `Countable` so you can `count()` it:
+
+```php
+echo count($las);
+
+// 6
 ```
 
 ## Other

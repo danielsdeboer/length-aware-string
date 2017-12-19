@@ -6,8 +6,9 @@ use Aviator\Makeable\Interfaces\Makeable;
 use Aviator\Makeable\Traits\MakeableTrait;
 use Aviator\Types\Contracts\StringLengthValidator;
 use Aviator\Types\Strategies\Truncates;
+use Countable;
 
-class LengthAwareString implements Makeable
+class LengthAwareString implements Makeable, Countable
 {
     use MakeableTrait;
 
@@ -61,5 +62,14 @@ class LengthAwareString implements Makeable
     public function __toString ()
     {
         return $this->string;
+    }
+
+    /**
+     * Count elements of an object
+     * @return int
+     */
+    public function count () : int
+    {
+        return strlen($this->string);
     }
 }
